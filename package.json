@@ -6,6 +6,7 @@
     "node": ">=8"
   },
   "dependencies": {
+    "@endouble.com/eslint-config-endouble": "^2.0.0",
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
@@ -50,7 +51,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "lint": "node scripts/lint.js",
+    "lint": "eslint js/*.js",
     "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {
