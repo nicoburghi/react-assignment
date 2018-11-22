@@ -1,0 +1,8 @@
+# /node_modules ignored by default
+
+# Ignore index.js
+package.json
+package-lock.json
+/scripts
+/config
+src/registerServiceWorker.js
