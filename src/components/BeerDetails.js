@@ -12,8 +12,11 @@ function BeerDetails(props) {
                 <Image wrapped size='medium' src={beer.image_url} />
                 <Modal.Description>
                     <Header>{beer.tagline}</Header>
+                    <Header as='h4'>Description</Header>
                     <p>{beer.description}</p>
+                    <Header as='h4'>Food Pairing</Header>
                     <p>{beer.food_pairing}</p>
+                    <Header as='h4'>Brewers Tips</Header>
                     <p>{beer.brewers_tips}</p>
                 </Modal.Description>
             </Modal.Content>
