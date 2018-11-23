@@ -27,18 +27,21 @@ class Filter extends React.Component {
         return (
             <Segment className="filters-wrapper">
                 <Header as='h3'>Filters</Header>
-                <Form onSubmit={this.handleSubmit}>
+                <Form onSubmit={this.handleSubmit} role="search">
                     <Form.Group widths='equal'>
                         <Form.Field>
-                            <Input placeholder='Name' ref={this.beerNameField} />
+                            <label htmlFor='beerName'>Name</label>
+                            <Input placeholder='Name' id='beerName' ref={this.beerNameField} />
                         </Form.Field>
                         <Form.Field>
-                            <Input placeholder='IBU Greater Than' ref={this.ibuGtField} />
+                            <label htmlFor='beerIbuGt'>IBU Greater Than</label>
+                            <Input placeholder='IBU Greater Than' id='beerIbuGt' ref={this.ibuGtField} />
                         </Form.Field>
                         <Form.Field>
-                            <Input placeholder='ABV Greater Than' ref={this.abvGtField} />
+                            <label htmlFor='beerAbvGt'>ABV Greater Than</label>
+                            <Input placeholder='ABV Greater Than' id='beerAbvGt' ref={this.abvGtField} />
                         </Form.Field>
-                        <Form.Field>
+                        <Form.Field className='form-action-container'>
                             <Button primary>Filter</Button>
                         </Form.Field>
                     </Form.Group>

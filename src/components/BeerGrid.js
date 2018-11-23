@@ -26,6 +26,18 @@ class BeerGrid extends React.Component {
     handleClick(event, beer) {
         event.preventDefault();
 
+        this.openBeerDetail(beer);
+    }
+
+    handleKeyPress(event, beer) {
+        event.preventDefault();
+
+        if (event.key === 'Enter') {
+            this.openBeerDetail(beer);
+        }
+    }
+
+    openBeerDetail(beer) {
         this.beerDetailData = beer;
         this.setState({
             isModalOpened: true,
@@ -45,9 +57,14 @@ class BeerGrid extends React.Component {
                                 {
                                     beers.map(beer => (
                                         <Grid.Column key={beer.id} stretched>
-                                            <Card centered link onClick={e => this.handleClick(e, beer)}>
+                                            <Card centered link onClick={e => this.handleClick(e, beer)} onKeyPress={e => this.handleKeyPress(e, beer)} tabIndex='0'>
                                                 <div className="card-image-wrapper">
-                                                    <Image centered style={{ maxHeight: 200 }} src={beer.image_url} />
+                                                    <Image
+                                                        centered
+                                                        style={{ maxHeight: 200 }}
+                                                        src={beer.image_url}
+                                                        alt={beer.name}
+                                                    />
                                                 </div>
                                                 <Card.Content>
                                                     <Card.Header>{beer.name}</Card.Header>

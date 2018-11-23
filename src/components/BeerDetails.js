@@ -9,7 +9,7 @@ function BeerDetails(props) {
         <Modal open closeIcon onClose={onCloseDetail}>
             <Modal.Header>{beer.name}</Modal.Header>
             <Modal.Content image scrolling>
-                <Image wrapped size='medium' src={beer.image_url} />
+                <Image wrapped size='medium' src={beer.image_url} alt={beer.name} />
                 <Modal.Description>
                     <Header>{beer.tagline}</Header>
                     <Header as='h4'>Description</Header>
