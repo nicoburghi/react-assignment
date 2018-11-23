@@ -100,7 +100,8 @@
     "extends": "@endouble.com/eslint-config-endouble/react",
     "env": {
       "browser": true,
-      "node": true
+      "node": true,
+      "jest": true
     }
   }
 }
