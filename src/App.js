@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Loader, Segment, Icon, Container } from 'semantic-ui-react';
+import { Header, Loader, Message, Icon, Container } from 'semantic-ui-react';
 import BeerGrid from './components/BeerGrid';
 import Filter from './components/Filter';
 import './App.css';
@@ -93,11 +93,7 @@ class App extends React.Component {
                     }
                     {
                         hasError
-                        && (
-                            <Segment inverted color='red'>
-                                Oops there was a problem serving the beer! Please try again in a few minutes.
-                            </Segment>
-                        )
+                        && <Message color='red'>Oops there was a problem serving the beer! Please try again in a few minutes.</Message>
                     }
                 </Container>
             </div>
