@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Form, Input, Button } from 'semantic-ui-react';
+import { Form, Input, Button, Segment, Header } from 'semantic-ui-react';
+import '../styles/Filter.css';
 
 class Filter extends React.Component {
     constructor(props) {
@@ -24,22 +25,25 @@ class Filter extends React.Component {
 
     render() {
         return (
-            <Form onSubmit={this.handleSubmit}>
-                <Form.Group widths='equal'>
-                    <Form.Field>
-                        <Input placeholder='Name' ref={this.beerNameField} />
-                    </Form.Field>
-                    <Form.Field>
-                        <Input placeholder='IBU Greater Than' ref={this.ibuGtField} />
-                    </Form.Field>
-                    <Form.Field>
-                        <Input placeholder='ABV Greater Than' ref={this.abvGtField} />
-                    </Form.Field>
-                    <Form.Field>
-                        <Button>Filter</Button>
-                    </Form.Field>
-                </Form.Group>
-            </Form>
+            <Segment className="filters-wrapper">
+                <Header as='h3'>Filters</Header>
+                <Form onSubmit={this.handleSubmit}>
+                    <Form.Group widths='equal'>
+                        <Form.Field>
+                            <Input placeholder='Name' ref={this.beerNameField} />
+                        </Form.Field>
+                        <Form.Field>
+                            <Input placeholder='IBU Greater Than' ref={this.ibuGtField} />
+                        </Form.Field>
+                        <Form.Field>
+                            <Input placeholder='ABV Greater Than' ref={this.abvGtField} />
+                        </Form.Field>
+                        <Form.Field>
+                            <Button primary>Filter</Button>
+                        </Form.Field>
+                    </Form.Group>
+                </Form>
+            </Segment>
         );
     }
 }

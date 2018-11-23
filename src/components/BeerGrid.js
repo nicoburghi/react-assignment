@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Grid, Card, Image } from 'semantic-ui-react';
 import BeerDetails from './BeerDetails';
+import '../styles/BeerGrid.css';
 
 class BeerGrid extends React.Component {
     constructor(props) {
@@ -42,7 +43,7 @@ class BeerGrid extends React.Component {
                         beers.map(beer => (
                             <Grid.Column key={beer.id} stretched>
                                 <Card centered link onClick={e => this.handleClick(e, beer)}>
-                                    <div>
+                                    <div className="card-image-wrapper">
                                         <Image centered style={{ maxHeight: 200 }} src={beer.image_url} />
                                     </div>
                                     <Card.Content>
