@@ -1,10 +1,8 @@
 import React from 'react';
-import { Loader, Segment } from 'semantic-ui-react';
-import logo from './logo.svg';
-import 'semantic-ui-css/semantic.min.css';
-import './App.css';
+import { Header, Loader, Segment, Icon, Container } from 'semantic-ui-react';
 import BeerGrid from './components/BeerGrid';
 import Filter from './components/Filter';
+import './App.css';
 
 const API_URL = 'https://api.punkapi.com/v2/beers';
 
@@ -72,35 +70,36 @@ class App extends React.Component {
         const { data, isFetching, hasError } = this.state;
 
         return (
-            <div className="App">
-                <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <h1 className="App-title">Welcome to React</h1>
+            <div>
+                <header className="app-header">
+                    <Header as='h1' inverted>
+                        <Icon name='beer' />
+                        <Header.Content>
+                            Punk Beers
+                            <Header.Subheader>by Nicolas Burghi</Header.Subheader>
+                        </Header.Content>
+                    </Header>
                 </header>
-                <p className="App-intro">
-                    To get started, edit
-                    {' '}
-                    <code>src/App.js</code>
-                    {' '}
-                    and save to reload.
-                </p>
-                <Filter onFilter={this.onFilter} />
-                {
-                    isFetching
-                    && <Loader active inline='centered' />
-                }
-                {
-                    !isFetching && data
-                    && <BeerGrid beers={data} />
-                }
-                {
-                    hasError
-                    && (
-                        <Segment inverted color='red'>
-                            Oops there was a problem serving the beer! Please try again in a few minutes.
-                        </Segment>
-                    )
-                }
+
+                <Container>
+                    <Filter onFilter={this.onFilter} />
+                    {
+                        isFetching
+                        && <Loader active inline='centered' />
+                    }
+                    {
+                        !isFetching && data
+                        && <BeerGrid beers={data} />
+                    }
+                    {
+                        hasError
+                        && (
+                            <Segment inverted color='red'>
+                                Oops there was a problem serving the beer! Please try again in a few minutes.
+                            </Segment>
+                        )
+                    }
+                </Container>
             </div>
         );
     }

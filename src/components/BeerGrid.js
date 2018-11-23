@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Grid, Card, Image } from 'semantic-ui-react';
+import { Grid, Card, Image } from 'semantic-ui-react';
 import BeerDetails from './BeerDetails';
 
 class BeerGrid extends React.Component {
@@ -36,12 +36,12 @@ class BeerGrid extends React.Component {
         const { isModalOpened } = this.state;
 
         return (
-            <Container>
+            <React.Fragment>
                 <Grid stackable columns={4}>
                     {
                         beers.map(beer => (
-                            <Grid.Column key={beer.id}>
-                                <Card link onClick={e => this.handleClick(e, beer)}>
+                            <Grid.Column key={beer.id} stretched>
+                                <Card centered link onClick={e => this.handleClick(e, beer)}>
                                     <div>
                                         <Image centered style={{ maxHeight: 200 }} src={beer.image_url} />
                                     </div>
@@ -64,7 +64,7 @@ class BeerGrid extends React.Component {
                     isModalOpened
                     && <BeerDetails beer={this.beerDetailData} onCloseDetail={this.onCloseDetail} />
                 }
-            </Container>
+            </React.Fragment>
         );
     }
 }
