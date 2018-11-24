@@ -74,7 +74,7 @@ class BeerGrid extends React.Component {
                                                     <Card.Description>{beer.tagline}</Card.Description>
                                                 </Card.Content>
                                                 <Card.Content extra>
-                                                    { `${beer.abv} % - ${beer.ibu} IBU` }
+                                                    { `${beer.abv} %${beer.ibu ? ` - ${beer.ibu} IBU` : ''}` }
                                                 </Card.Content>
                                             </Card>
                                         </Grid.Column>
@@ -98,7 +98,15 @@ BeerGrid.defaultProps = {
 };
 
 BeerGrid.propTypes = {
-    beers: PropTypes.arrayOf(PropTypes.shape({})),
+    beers: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+        tagline: PropTypes.string.isRequired,
+        first_brewed: PropTypes.string.isRequired,
+        image_url: PropTypes.string.isRequired,
+        abv: PropTypes.number,
+        ibu: PropTypes.number,
+    })),
 };
 
 export default BeerGrid;

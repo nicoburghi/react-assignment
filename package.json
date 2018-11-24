@@ -56,13 +56,15 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "lint": "eslint src/**/*.js",
-    "lint:fix": "eslint src/**/*.js --fix",
-    "test": "node scripts/test.js --env=jsdom"
+    "lint": "node scripts/lint.js",
+    "test": "node scripts/test.js --env=jsdom",
+    "test:coverage": "node scripts/test.js --coverage --env=jsdom"
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx,mjs}"
+      "src/**/*.{js,jsx,mjs}",
+      "!src/index.js",
+      "!src/registerServiceWorker.js"
     ],
     "setupFiles": [
       "<rootDir>/config/polyfills.js",

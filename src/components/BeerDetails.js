@@ -15,7 +15,14 @@ function BeerDetails(props) {
                     <Header as='h4'>Description</Header>
                     <p>{beer.description}</p>
                     <Header as='h4'>Food Pairing</Header>
-                    <p>{beer.food_pairing}</p>
+                    <ul>
+                        {
+                            beer.food_pairing.map((food, i) => {
+                                const key = `${i}food`;
+                                return <li key={key}>{food}</li>;
+                            })
+                        }
+                    </ul>
                     <Header as='h4'>Brewers Tips</Header>
                     <p>{beer.brewers_tips}</p>
                 </Modal.Description>
@@ -30,7 +37,7 @@ BeerDetails.propTypes = {
         tagline: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired,
         image_url: PropTypes.string.isRequired,
-        food_pairing: PropTypes.string.isRequired,
+        food_pairing: PropTypes.arrayOf(PropTypes.string).isRequired,
         brewers_tips: PropTypes.string.isRequired,
     }).isRequired,
     onCloseDetail: PropTypes.func.isRequired,

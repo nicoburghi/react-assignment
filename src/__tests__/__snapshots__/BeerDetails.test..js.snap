@@ -8,7 +8,9 @@ ShallowWrapper {
       Object {
         "brewers_tips": "Drink carefully",
         "description": "Just a mock beer for testing",
-        "food_pairing": "Every snack you can imagine",
+        "food_pairing": Array [
+          "Every snack you can imagine",
+        ],
         "image_url": "https://testurl.com/beer/image.png",
         "name": "Test Beer",
         "tagline": "A beer for testing",
@@ -63,9 +65,11 @@ ShallowWrapper {
             >
               Food Pairing
             </Header>
-            <p>
-              Every snack you can imagine
-            </p>
+            <ul>
+              <li>
+                Every snack you can imagine
+              </li>
+            </ul>
             <Header
               as="h4"
             >
@@ -129,9 +133,11 @@ ShallowWrapper {
               >
                 Food Pairing
               </Header>
-              <p>
-                Every snack you can imagine
-              </p>
+              <ul>
+                <li>
+                  Every snack you can imagine
+                </li>
+              </ul>
               <Header
                 as="h4"
               >
@@ -185,9 +191,11 @@ ShallowWrapper {
                 >
                   Food Pairing
                 </Header>,
-                <p>
-                  Every snack you can imagine
-                </p>,
+                <ul>
+                  <li>
+                    Every snack you can imagine
+                  </li>
+                </ul>,
                 <Header
                   as="h4"
                 >
@@ -251,11 +259,27 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Every snack you can imagine",
+                  "children": Array [
+                    <li>
+                      Every snack you can imagine
+                    </li>,
+                  ],
                 },
                 "ref": null,
-                "rendered": "Every snack you can imagine",
-                "type": "p",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "0food",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Every snack you can imagine",
+                    },
+                    "ref": null,
+                    "rendered": "Every snack you can imagine",
+                    "type": "li",
+                  },
+                ],
+                "type": "ul",
               },
               Object {
                 "instance": null,
@@ -329,9 +353,11 @@ ShallowWrapper {
               >
                 Food Pairing
               </Header>
-              <p>
-                Every snack you can imagine
-              </p>
+              <ul>
+                <li>
+                  Every snack you can imagine
+                </li>
+              </ul>
               <Header
                 as="h4"
               >
@@ -395,9 +421,11 @@ ShallowWrapper {
                 >
                   Food Pairing
                 </Header>
-                <p>
-                  Every snack you can imagine
-                </p>
+                <ul>
+                  <li>
+                    Every snack you can imagine
+                  </li>
+                </ul>
                 <Header
                   as="h4"
                 >
@@ -451,9 +479,11 @@ ShallowWrapper {
                   >
                     Food Pairing
                   </Header>,
-                  <p>
-                    Every snack you can imagine
-                  </p>,
+                  <ul>
+                    <li>
+                      Every snack you can imagine
+                    </li>
+                  </ul>,
                   <Header
                     as="h4"
                   >
@@ -517,11 +547,27 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Every snack you can imagine",
+                    "children": Array [
+                      <li>
+                        Every snack you can imagine
+                      </li>,
+                    ],
                   },
                   "ref": null,
-                  "rendered": "Every snack you can imagine",
-                  "type": "p",
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "0food",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Every snack you can imagine",
+                      },
+                      "ref": null,
+                      "rendered": "Every snack you can imagine",
+                      "type": "li",
+                    },
+                  ],
+                  "type": "ul",
                 },
                 Object {
                   "instance": null,

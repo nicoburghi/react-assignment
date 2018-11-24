@@ -20,10 +20,10 @@ describe('BeerDetails Unit Test', () => {
                 tagline: 'A beer for testing',
                 description: 'Just a mock beer for testing',
                 image_url: 'https://testurl.com/beer/image.png',
-                food_pairing: 'Every snack you can imagine',
+                food_pairing: ['Every snack you can imagine'],
                 brewers_tips: 'Drink carefully',
             },
-            onCloseDetail: jest.fn()
+            onCloseDetail: jest.fn(),
         };
     });
 
