@@ -1,0 +1,843 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter Unit Test Component should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Filter
+    onFilter={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <Header
+          as="h3"
+        >
+          Filters
+        </Header>,
+        <Form
+          as="form"
+          onSubmit={[Function]}
+          role="search"
+        >
+          <FormGroup
+            widths="equal"
+          >
+            <FormField>
+              <label
+                htmlFor="beerName"
+              >
+                Name
+              </label>
+              <Input
+                id="beerName"
+                placeholder="Name"
+                type="text"
+              />
+            </FormField>
+            <FormField>
+              <label
+                htmlFor="beerIbuGt"
+              >
+                IBU Greater Than
+              </label>
+              <Input
+                id="beerIbuGt"
+                onKeyPress={[Function]}
+                placeholder="IBU Greater Than"
+                type="number"
+              />
+            </FormField>
+            <FormField>
+              <label
+                htmlFor="beerAbvGt"
+              >
+                ABV Greater Than
+              </label>
+              <Input
+                id="beerAbvGt"
+                onKeyPress={[Function]}
+                placeholder="ABV Greater Than"
+                type="number"
+              />
+            </FormField>
+            <FormField
+              className="form-action-container"
+            >
+              <Button
+                as="button"
+                primary={true}
+                role="button"
+              >
+                Filter
+              </Button>
+            </FormField>
+          </FormGroup>
+        </Form>,
+      ],
+      "className": "filters-wrapper",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "as": "h3",
+          "children": "Filters",
+        },
+        "ref": null,
+        "rendered": "Filters",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "as": "form",
+          "children": <FormGroup
+            widths="equal"
+          >
+            <FormField>
+              <label
+                htmlFor="beerName"
+              >
+                Name
+              </label>
+              <Input
+                id="beerName"
+                placeholder="Name"
+                type="text"
+              />
+            </FormField>
+            <FormField>
+              <label
+                htmlFor="beerIbuGt"
+              >
+                IBU Greater Than
+              </label>
+              <Input
+                id="beerIbuGt"
+                onKeyPress={[Function]}
+                placeholder="IBU Greater Than"
+                type="number"
+              />
+            </FormField>
+            <FormField>
+              <label
+                htmlFor="beerAbvGt"
+              >
+                ABV Greater Than
+              </label>
+              <Input
+                id="beerAbvGt"
+                onKeyPress={[Function]}
+                placeholder="ABV Greater Than"
+                type="number"
+              />
+            </FormField>
+            <FormField
+              className="form-action-container"
+            >
+              <Button
+                as="button"
+                primary={true}
+                role="button"
+              >
+                Filter
+              </Button>
+            </FormField>
+          </FormGroup>,
+          "onSubmit": [Function],
+          "role": "search",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <FormField>
+                <label
+                  htmlFor="beerName"
+                >
+                  Name
+                </label>
+                <Input
+                  id="beerName"
+                  placeholder="Name"
+                  type="text"
+                />
+              </FormField>,
+              <FormField>
+                <label
+                  htmlFor="beerIbuGt"
+                >
+                  IBU Greater Than
+                </label>
+                <Input
+                  id="beerIbuGt"
+                  onKeyPress={[Function]}
+                  placeholder="IBU Greater Than"
+                  type="number"
+                />
+              </FormField>,
+              <FormField>
+                <label
+                  htmlFor="beerAbvGt"
+                >
+                  ABV Greater Than
+                </label>
+                <Input
+                  id="beerAbvGt"
+                  onKeyPress={[Function]}
+                  placeholder="ABV Greater Than"
+                  type="number"
+                />
+              </FormField>,
+              <FormField
+                className="form-action-container"
+              >
+                <Button
+                  as="button"
+                  primary={true}
+                  role="button"
+                >
+                  Filter
+                </Button>
+              </FormField>,
+            ],
+            "widths": "equal",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <label
+                    htmlFor="beerName"
+                  >
+                    Name
+                  </label>,
+                  <Input
+                    id="beerName"
+                    placeholder="Name"
+                    type="text"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Name",
+                    "htmlFor": "beerName",
+                  },
+                  "ref": null,
+                  "rendered": "Name",
+                  "type": "label",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "id": "beerName",
+                    "placeholder": "Name",
+                    "type": "text",
+                  },
+                  "ref": Object {
+                    "current": null,
+                  },
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <label
+                    htmlFor="beerIbuGt"
+                  >
+                    IBU Greater Than
+                  </label>,
+                  <Input
+                    id="beerIbuGt"
+                    onKeyPress={[Function]}
+                    placeholder="IBU Greater Than"
+                    type="number"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "IBU Greater Than",
+                    "htmlFor": "beerIbuGt",
+                  },
+                  "ref": null,
+                  "rendered": "IBU Greater Than",
+                  "type": "label",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "id": "beerIbuGt",
+                    "onKeyPress": [Function],
+                    "placeholder": "IBU Greater Than",
+                    "type": "number",
+                  },
+                  "ref": Object {
+                    "current": null,
+                  },
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <label
+                    htmlFor="beerAbvGt"
+                  >
+                    ABV Greater Than
+                  </label>,
+                  <Input
+                    id="beerAbvGt"
+                    onKeyPress={[Function]}
+                    placeholder="ABV Greater Than"
+                    type="number"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "ABV Greater Than",
+                    "htmlFor": "beerAbvGt",
+                  },
+                  "ref": null,
+                  "rendered": "ABV Greater Than",
+                  "type": "label",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "id": "beerAbvGt",
+                    "onKeyPress": [Function],
+                    "placeholder": "ABV Greater Than",
+                    "type": "number",
+                  },
+                  "ref": Object {
+                    "current": null,
+                  },
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <Button
+                  as="button"
+                  primary={true}
+                  role="button"
+                >
+                  Filter
+                </Button>,
+                "className": "form-action-container",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "as": "button",
+                  "children": "Filter",
+                  "primary": true,
+                  "role": "button",
+                },
+                "ref": null,
+                "rendered": "Filter",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <Header
+            as="h3"
+          >
+            Filters
+          </Header>,
+          <Form
+            as="form"
+            onSubmit={[Function]}
+            role="search"
+          >
+            <FormGroup
+              widths="equal"
+            >
+              <FormField>
+                <label
+                  htmlFor="beerName"
+                >
+                  Name
+                </label>
+                <Input
+                  id="beerName"
+                  placeholder="Name"
+                  type="text"
+                />
+              </FormField>
+              <FormField>
+                <label
+                  htmlFor="beerIbuGt"
+                >
+                  IBU Greater Than
+                </label>
+                <Input
+                  id="beerIbuGt"
+                  onKeyPress={[Function]}
+                  placeholder="IBU Greater Than"
+                  type="number"
+                />
+              </FormField>
+              <FormField>
+                <label
+                  htmlFor="beerAbvGt"
+                >
+                  ABV Greater Than
+                </label>
+                <Input
+                  id="beerAbvGt"
+                  onKeyPress={[Function]}
+                  placeholder="ABV Greater Than"
+                  type="number"
+                />
+              </FormField>
+              <FormField
+                className="form-action-container"
+              >
+                <Button
+                  as="button"
+                  primary={true}
+                  role="button"
+                >
+                  Filter
+                </Button>
+              </FormField>
+            </FormGroup>
+          </Form>,
+        ],
+        "className": "filters-wrapper",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "as": "h3",
+            "children": "Filters",
+          },
+          "ref": null,
+          "rendered": "Filters",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "as": "form",
+            "children": <FormGroup
+              widths="equal"
+            >
+              <FormField>
+                <label
+                  htmlFor="beerName"
+                >
+                  Name
+                </label>
+                <Input
+                  id="beerName"
+                  placeholder="Name"
+                  type="text"
+                />
+              </FormField>
+              <FormField>
+                <label
+                  htmlFor="beerIbuGt"
+                >
+                  IBU Greater Than
+                </label>
+                <Input
+                  id="beerIbuGt"
+                  onKeyPress={[Function]}
+                  placeholder="IBU Greater Than"
+                  type="number"
+                />
+              </FormField>
+              <FormField>
+                <label
+                  htmlFor="beerAbvGt"
+                >
+                  ABV Greater Than
+                </label>
+                <Input
+                  id="beerAbvGt"
+                  onKeyPress={[Function]}
+                  placeholder="ABV Greater Than"
+                  type="number"
+                />
+              </FormField>
+              <FormField
+                className="form-action-container"
+              >
+                <Button
+                  as="button"
+                  primary={true}
+                  role="button"
+                >
+                  Filter
+                </Button>
+              </FormField>
+            </FormGroup>,
+            "onSubmit": [Function],
+            "role": "search",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <FormField>
+                  <label
+                    htmlFor="beerName"
+                  >
+                    Name
+                  </label>
+                  <Input
+                    id="beerName"
+                    placeholder="Name"
+                    type="text"
+                  />
+                </FormField>,
+                <FormField>
+                  <label
+                    htmlFor="beerIbuGt"
+                  >
+                    IBU Greater Than
+                  </label>
+                  <Input
+                    id="beerIbuGt"
+                    onKeyPress={[Function]}
+                    placeholder="IBU Greater Than"
+                    type="number"
+                  />
+                </FormField>,
+                <FormField>
+                  <label
+                    htmlFor="beerAbvGt"
+                  >
+                    ABV Greater Than
+                  </label>
+                  <Input
+                    id="beerAbvGt"
+                    onKeyPress={[Function]}
+                    placeholder="ABV Greater Than"
+                    type="number"
+                  />
+                </FormField>,
+                <FormField
+                  className="form-action-container"
+                >
+                  <Button
+                    as="button"
+                    primary={true}
+                    role="button"
+                  >
+                    Filter
+                  </Button>
+                </FormField>,
+              ],
+              "widths": "equal",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <label
+                      htmlFor="beerName"
+                    >
+                      Name
+                    </label>,
+                    <Input
+                      id="beerName"
+                      placeholder="Name"
+                      type="text"
+                    />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Name",
+                      "htmlFor": "beerName",
+                    },
+                    "ref": null,
+                    "rendered": "Name",
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "id": "beerName",
+                      "placeholder": "Name",
+                      "type": "text",
+                    },
+                    "ref": Object {
+                      "current": null,
+                    },
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <label
+                      htmlFor="beerIbuGt"
+                    >
+                      IBU Greater Than
+                    </label>,
+                    <Input
+                      id="beerIbuGt"
+                      onKeyPress={[Function]}
+                      placeholder="IBU Greater Than"
+                      type="number"
+                    />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "IBU Greater Than",
+                      "htmlFor": "beerIbuGt",
+                    },
+                    "ref": null,
+                    "rendered": "IBU Greater Than",
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "id": "beerIbuGt",
+                      "onKeyPress": [Function],
+                      "placeholder": "IBU Greater Than",
+                      "type": "number",
+                    },
+                    "ref": Object {
+                      "current": null,
+                    },
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <label
+                      htmlFor="beerAbvGt"
+                    >
+                      ABV Greater Than
+                    </label>,
+                    <Input
+                      id="beerAbvGt"
+                      onKeyPress={[Function]}
+                      placeholder="ABV Greater Than"
+                      type="number"
+                    />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "ABV Greater Than",
+                      "htmlFor": "beerAbvGt",
+                    },
+                    "ref": null,
+                    "rendered": "ABV Greater Than",
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "id": "beerAbvGt",
+                      "onKeyPress": [Function],
+                      "placeholder": "ABV Greater Than",
+                      "type": "number",
+                    },
+                    "ref": Object {
+                      "current": null,
+                    },
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <Button
+                    as="button"
+                    primary={true}
+                    role="button"
+                  >
+                    Filter
+                  </Button>,
+                  "className": "form-action-container",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "as": "button",
+                    "children": "Filter",
+                    "primary": true,
+                    "role": "button",
+                  },
+                  "ref": null,
+                  "rendered": "Filter",
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

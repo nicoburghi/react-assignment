@@ -1,0 +1,577 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BeerDetails Unit Test Component should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <BeerDetails
+    beer={
+      Object {
+        "brewers_tips": "Drink carefully",
+        "description": "Just a mock beer for testing",
+        "food_pairing": "Every snack you can imagine",
+        "image_url": "https://testurl.com/beer/image.png",
+        "name": "Test Beer",
+        "tagline": "A beer for testing",
+      }
+    }
+    onCloseDetail={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "centered": true,
+      "children": Array [
+        <ModalHeader>
+          Test Beer
+        </ModalHeader>,
+        <ModalContent
+          image={true}
+          scrolling={true}
+        >
+          <Image
+            alt="Test Beer"
+            as="img"
+            size="medium"
+            src="https://testurl.com/beer/image.png"
+            ui={true}
+            wrapped={true}
+          />
+          <ModalDescription>
+            <Header>
+              A beer for testing
+            </Header>
+            <Header
+              as="h4"
+            >
+              Description
+            </Header>
+            <p>
+              Just a mock beer for testing
+            </p>
+            <Header
+              as="h4"
+            >
+              Food Pairing
+            </Header>
+            <p>
+              Every snack you can imagine
+            </p>
+            <Header
+              as="h4"
+            >
+              Brewers Tips
+            </Header>
+            <p>
+              Drink carefully
+            </p>
+          </ModalDescription>
+        </ModalContent>,
+      ],
+      "closeIcon": true,
+      "closeOnDimmerClick": true,
+      "closeOnDocumentClick": false,
+      "dimmer": true,
+      "eventPool": "Modal",
+      "onClose": [MockFunction],
+      "open": true,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "Test Beer",
+        },
+        "ref": null,
+        "rendered": "Test Beer",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <Image
+              alt="Test Beer"
+              as="img"
+              size="medium"
+              src="https://testurl.com/beer/image.png"
+              ui={true}
+              wrapped={true}
+            />,
+            <ModalDescription>
+              <Header>
+                A beer for testing
+              </Header>
+              <Header
+                as="h4"
+              >
+                Description
+              </Header>
+              <p>
+                Just a mock beer for testing
+              </p>
+              <Header
+                as="h4"
+              >
+                Food Pairing
+              </Header>
+              <p>
+                Every snack you can imagine
+              </p>
+              <Header
+                as="h4"
+              >
+                Brewers Tips
+              </Header>
+              <p>
+                Drink carefully
+              </p>
+            </ModalDescription>,
+          ],
+          "image": true,
+          "scrolling": true,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "alt": "Test Beer",
+              "as": "img",
+              "size": "medium",
+              "src": "https://testurl.com/beer/image.png",
+              "ui": true,
+              "wrapped": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Header>
+                  A beer for testing
+                </Header>,
+                <Header
+                  as="h4"
+                >
+                  Description
+                </Header>,
+                <p>
+                  Just a mock beer for testing
+                </p>,
+                <Header
+                  as="h4"
+                >
+                  Food Pairing
+                </Header>,
+                <p>
+                  Every snack you can imagine
+                </p>,
+                <Header
+                  as="h4"
+                >
+                  Brewers Tips
+                </Header>,
+                <p>
+                  Drink carefully
+                </p>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "A beer for testing",
+                },
+                "ref": null,
+                "rendered": "A beer for testing",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "h4",
+                  "children": "Description",
+                },
+                "ref": null,
+                "rendered": "Description",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Just a mock beer for testing",
+                },
+                "ref": null,
+                "rendered": "Just a mock beer for testing",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "h4",
+                  "children": "Food Pairing",
+                },
+                "ref": null,
+                "rendered": "Food Pairing",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Every snack you can imagine",
+                },
+                "ref": null,
+                "rendered": "Every snack you can imagine",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "as": "h4",
+                  "children": "Brewers Tips",
+                },
+                "ref": null,
+                "rendered": "Brewers Tips",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Drink carefully",
+                },
+                "ref": null,
+                "rendered": "Drink carefully",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "centered": true,
+        "children": Array [
+          <ModalHeader>
+            Test Beer
+          </ModalHeader>,
+          <ModalContent
+            image={true}
+            scrolling={true}
+          >
+            <Image
+              alt="Test Beer"
+              as="img"
+              size="medium"
+              src="https://testurl.com/beer/image.png"
+              ui={true}
+              wrapped={true}
+            />
+            <ModalDescription>
+              <Header>
+                A beer for testing
+              </Header>
+              <Header
+                as="h4"
+              >
+                Description
+              </Header>
+              <p>
+                Just a mock beer for testing
+              </p>
+              <Header
+                as="h4"
+              >
+                Food Pairing
+              </Header>
+              <p>
+                Every snack you can imagine
+              </p>
+              <Header
+                as="h4"
+              >
+                Brewers Tips
+              </Header>
+              <p>
+                Drink carefully
+              </p>
+            </ModalDescription>
+          </ModalContent>,
+        ],
+        "closeIcon": true,
+        "closeOnDimmerClick": true,
+        "closeOnDocumentClick": false,
+        "dimmer": true,
+        "eventPool": "Modal",
+        "onClose": [MockFunction],
+        "open": true,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "Test Beer",
+          },
+          "ref": null,
+          "rendered": "Test Beer",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Image
+                alt="Test Beer"
+                as="img"
+                size="medium"
+                src="https://testurl.com/beer/image.png"
+                ui={true}
+                wrapped={true}
+              />,
+              <ModalDescription>
+                <Header>
+                  A beer for testing
+                </Header>
+                <Header
+                  as="h4"
+                >
+                  Description
+                </Header>
+                <p>
+                  Just a mock beer for testing
+                </p>
+                <Header
+                  as="h4"
+                >
+                  Food Pairing
+                </Header>
+                <p>
+                  Every snack you can imagine
+                </p>
+                <Header
+                  as="h4"
+                >
+                  Brewers Tips
+                </Header>
+                <p>
+                  Drink carefully
+                </p>
+              </ModalDescription>,
+            ],
+            "image": true,
+            "scrolling": true,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "alt": "Test Beer",
+                "as": "img",
+                "size": "medium",
+                "src": "https://testurl.com/beer/image.png",
+                "ui": true,
+                "wrapped": true,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <Header>
+                    A beer for testing
+                  </Header>,
+                  <Header
+                    as="h4"
+                  >
+                    Description
+                  </Header>,
+                  <p>
+                    Just a mock beer for testing
+                  </p>,
+                  <Header
+                    as="h4"
+                  >
+                    Food Pairing
+                  </Header>,
+                  <p>
+                    Every snack you can imagine
+                  </p>,
+                  <Header
+                    as="h4"
+                  >
+                    Brewers Tips
+                  </Header>,
+                  <p>
+                    Drink carefully
+                  </p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "A beer for testing",
+                  },
+                  "ref": null,
+                  "rendered": "A beer for testing",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "h4",
+                    "children": "Description",
+                  },
+                  "ref": null,
+                  "rendered": "Description",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Just a mock beer for testing",
+                  },
+                  "ref": null,
+                  "rendered": "Just a mock beer for testing",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "h4",
+                    "children": "Food Pairing",
+                  },
+                  "ref": null,
+                  "rendered": "Food Pairing",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Every snack you can imagine",
+                  },
+                  "ref": null,
+                  "rendered": "Every snack you can imagine",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "as": "h4",
+                    "children": "Brewers Tips",
+                  },
+                  "ref": null,
+                  "rendered": "Brewers Tips",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Drink carefully",
+                  },
+                  "ref": null,
+                  "rendered": "Drink carefully",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

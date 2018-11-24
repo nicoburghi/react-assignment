@@ -25,7 +25,14 @@ function BeerDetails(props) {
 }
 
 BeerDetails.propTypes = {
-    beer: PropTypes.shape({}).isRequired,
+    beer: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        tagline: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        image_url: PropTypes.string.isRequired,
+        food_pairing: PropTypes.string.isRequired,
+        brewers_tips: PropTypes.string.isRequired,
+    }).isRequired,
     onCloseDetail: PropTypes.func.isRequired,
 };
 

@@ -3,11 +3,17 @@ import PropTypes from 'prop-types';
 import { Form, Input, Button, Segment, Header } from 'semantic-ui-react';
 import '../styles/Filter.css';
 
+const handleKeyPress = (event) => {
+    const re = /[0-9]/g;
+    if (!re.test(event.key) && event.key !== 'Enter') {
+        event.preventDefault();
+    }
+};
+
 class Filter extends React.Component {
     constructor(props) {
         super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleKeyPress = this.handleKeyPress.bind(this);
         this.beerNameField = React.createRef();
         this.ibuGtField = React.createRef();
         this.abvGtField = React.createRef();
@@ -24,14 +30,6 @@ class Filter extends React.Component {
         onFilter(filters);
     }
 
-    handleKeyPress(event) {
-        const re = /[0-9]/g;
-        console.log(event.key);
-        if (!re.test(event.key) && event.key !== 'Enter') {
-            event.preventDefault();
-        }
-    }
-
     render() {
         return (
             <Segment className="filters-wrapper">
@@ -44,11 +42,11 @@ class Filter extends React.Component {
                         </Form.Field>
                         <Form.Field>
                             <label htmlFor='beerIbuGt'>IBU Greater Than</label>
-                            <Input type='number' placeholder='IBU Greater Than' id='beerIbuGt' ref={this.ibuGtField} onKeyPress={this.handleKeyPress} />
+                            <Input type='number' placeholder='IBU Greater Than' id='beerIbuGt' ref={this.ibuGtField} onKeyPress={handleKeyPress} />
                         </Form.Field>
                         <Form.Field>
                             <label htmlFor='beerAbvGt'>ABV Greater Than</label>
-                            <Input type='number' placeholder='ABV Greater Than' id='beerAbvGt' ref={this.abvGtField} onKeyPress={this.handleKeyPress} />
+                            <Input type='number' placeholder='ABV Greater Than' id='beerAbvGt' ref={this.abvGtField} onKeyPress={handleKeyPress} />
                         </Form.Field>
                         <Form.Field className='form-action-container'>
                             <Button primary>Filter</Button>
