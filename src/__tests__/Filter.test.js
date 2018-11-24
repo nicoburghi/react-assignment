@@ -13,9 +13,7 @@ describe('Filter Unit Test', () => {
         return shallowedFilter;
     };
 
-    const getMountedFilter = () => {
-        return mount(<Filter {...props} />);;
-    };
+    const getMountedFilter = () => mount(<Filter {...props} />);
 
     beforeEach(() => {
         props = {
