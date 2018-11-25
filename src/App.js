@@ -21,7 +21,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        this.getBeers({});
+        this.getBeers();
     }
 
     onFilter(filters) {
@@ -44,7 +44,7 @@ class App extends React.Component {
             hasError: false,
         });
 
-        window.fetch(requestUrl)
+        return window.fetch(requestUrl)
             .then(response => response.json())
             .then((data) => {
                 if (data.error) {
