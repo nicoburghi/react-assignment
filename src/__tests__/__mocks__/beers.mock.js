@@ -44,26 +44,25 @@ const beers = [{
                 value: 5.3,
                 unit: 'kilograms',
             },
-        }, ],
+        }],
         hops: [{
-                name: 'Ahtanum',
-                amount: {
-                    value: 17.5,
-                    unit: 'grams',
-                },
-                add: 'start',
-                attribute: 'bitter',
+            name: 'Ahtanum',
+            amount: {
+                value: 17.5,
+                unit: 'grams',
             },
-            {
-                name: 'Chinook',
-                amount: {
-                    value: 15,
-                    unit: 'grams',
-                },
-                add: 'start',
-                attribute: 'bitter',
+            add: 'start',
+            attribute: 'bitter',
+        },
+        {
+            name: 'Chinook',
+            amount: {
+                value: 15,
+                unit: 'grams',
             },
-        ],
+            add: 'start',
+            attribute: 'bitter',
+        }],
         yeast: 'Wyeast 1056 - American Ale',
     },
     food_pairing: [
