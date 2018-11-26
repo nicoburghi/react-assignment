@@ -1,3 +1,15 @@
+## Punk Beers 
+
+This web app allow you to explore the Brewdog's beer catalogue using the [Punk API](https://punkapi.com/).
+
+You can search beers by name, alcohol average, or IBU value. You can also go through the results and open detail information of each beer.
+
+This Project uses [Semantic UI React](https://react.semantic-ui.com/) library to render UI components and the [Semantic UI Css](https://semantic-ui.com) to give the page a general style.
+
+Tu can see a demo in the following GitHub page: [PunkBeers](https://nicoburghi.github.io/react-assignment/)
+
+* * * * *  
+
 <img src="https://workingatendouble.com/content/uploads/2016/09/logo_endouble_default_coated.jpg" width="400">
 
 # React assignment
