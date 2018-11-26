@@ -44,50 +44,25 @@ ShallowWrapper {
           <GridColumn
             stretched={true}
           >
-            <Card
-              centered={true}
-              link={true}
-              onClick={[Function]}
-              onKeyPress={[Function]}
-              tabIndex="0"
-            >
-              <div
-                className="card-image-wrapper"
-              >
-                <Image
-                  alt="Test Beer"
-                  as="img"
-                  centered={true}
-                  src="https://testurl.com/beer/image.png"
-                  style={
-                    Object {
-                      "maxHeight": 200,
-                    }
-                  }
-                  ui={true}
-                />
-              </div>
-              <CardContent>
-                <CardHeader>
-                  Test Beer
-                </CardHeader>
-                <CardMeta>
-                  <span
-                    className="date"
-                  >
-                    Since Just a mock beer for testing
-                  </span>
-                </CardMeta>
-                <CardDescription>
-                  A beer for testing
-                </CardDescription>
-              </CardContent>
-              <CardContent
-                extra={true}
-              >
-                5 % - 40 IBU
-              </CardContent>
-            </Card>
+            <BeerCard
+              beer={
+                Object {
+                  "abv": 5,
+                  "brewers_tips": "Drink carefully",
+                  "description": "Just a mock beer for testing",
+                  "first_brewed": "Just a mock beer for testing",
+                  "food_pairing": Array [
+                    "Every snack you can imagine",
+                  ],
+                  "ibu": 40,
+                  "id": 1,
+                  "image_url": "https://testurl.com/beer/image.png",
+                  "name": "Test Beer",
+                  "tagline": "A beer for testing",
+                }
+              }
+              onOpenBeerDetail={[Function]}
+            />
           </GridColumn>
         </Grid>,
         false,
@@ -104,50 +79,25 @@ ShallowWrapper {
             <GridColumn
               stretched={true}
             >
-              <Card
-                centered={true}
-                link={true}
-                onClick={[Function]}
-                onKeyPress={[Function]}
-                tabIndex="0"
-              >
-                <div
-                  className="card-image-wrapper"
-                >
-                  <Image
-                    alt="Test Beer"
-                    as="img"
-                    centered={true}
-                    src="https://testurl.com/beer/image.png"
-                    style={
-                      Object {
-                        "maxHeight": 200,
-                      }
-                    }
-                    ui={true}
-                  />
-                </div>
-                <CardContent>
-                  <CardHeader>
-                    Test Beer
-                  </CardHeader>
-                  <CardMeta>
-                    <span
-                      className="date"
-                    >
-                      Since Just a mock beer for testing
-                    </span>
-                  </CardMeta>
-                  <CardDescription>
-                    A beer for testing
-                  </CardDescription>
-                </CardContent>
-                <CardContent
-                  extra={true}
-                >
-                  5 % - 40 IBU
-                </CardContent>
-              </Card>
+              <BeerCard
+                beer={
+                  Object {
+                    "abv": 5,
+                    "brewers_tips": "Drink carefully",
+                    "description": "Just a mock beer for testing",
+                    "first_brewed": "Just a mock beer for testing",
+                    "food_pairing": Array [
+                      "Every snack you can imagine",
+                    ],
+                    "ibu": 40,
+                    "id": 1,
+                    "image_url": "https://testurl.com/beer/image.png",
+                    "name": "Test Beer",
+                    "tagline": "A beer for testing",
+                  }
+                }
+                onOpenBeerDetail={[Function]}
+              />
             </GridColumn>,
           ],
           "columns": 4,
@@ -160,231 +110,51 @@ ShallowWrapper {
             "key": "1",
             "nodeType": "function",
             "props": Object {
-              "children": <Card
-                centered={true}
-                link={true}
-                onClick={[Function]}
-                onKeyPress={[Function]}
-                tabIndex="0"
-              >
-                <div
-                  className="card-image-wrapper"
-                >
-                  <Image
-                    alt="Test Beer"
-                    as="img"
-                    centered={true}
-                    src="https://testurl.com/beer/image.png"
-                    style={
-                      Object {
-                        "maxHeight": 200,
-                      }
-                    }
-                    ui={true}
-                  />
-                </div>
-                <CardContent>
-                  <CardHeader>
-                    Test Beer
-                  </CardHeader>
-                  <CardMeta>
-                    <span
-                      className="date"
-                    >
-                      Since Just a mock beer for testing
-                    </span>
-                  </CardMeta>
-                  <CardDescription>
-                    A beer for testing
-                  </CardDescription>
-                </CardContent>
-                <CardContent
-                  extra={true}
-                >
-                  5 % - 40 IBU
-                </CardContent>
-              </Card>,
+              "children": <BeerCard
+                beer={
+                  Object {
+                    "abv": 5,
+                    "brewers_tips": "Drink carefully",
+                    "description": "Just a mock beer for testing",
+                    "first_brewed": "Just a mock beer for testing",
+                    "food_pairing": Array [
+                      "Every snack you can imagine",
+                    ],
+                    "ibu": 40,
+                    "id": 1,
+                    "image_url": "https://testurl.com/beer/image.png",
+                    "name": "Test Beer",
+                    "tagline": "A beer for testing",
+                  }
+                }
+                onOpenBeerDetail={[Function]}
+              />,
               "stretched": true,
             },
             "ref": null,
             "rendered": Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
-                "centered": true,
-                "children": Array [
-                  <div
-                    className="card-image-wrapper"
-                  >
-                    <Image
-                      alt="Test Beer"
-                      as="img"
-                      centered={true}
-                      src="https://testurl.com/beer/image.png"
-                      style={
-                        Object {
-                          "maxHeight": 200,
-                        }
-                      }
-                      ui={true}
-                    />
-                  </div>,
-                  <CardContent>
-                    <CardHeader>
-                      Test Beer
-                    </CardHeader>
-                    <CardMeta>
-                      <span
-                        className="date"
-                      >
-                        Since Just a mock beer for testing
-                      </span>
-                    </CardMeta>
-                    <CardDescription>
-                      A beer for testing
-                    </CardDescription>
-                  </CardContent>,
-                  <CardContent
-                    extra={true}
-                  >
-                    5 % - 40 IBU
-                  </CardContent>,
-                ],
-                "link": true,
-                "onClick": [Function],
-                "onKeyPress": [Function],
-                "tabIndex": "0",
+                "beer": Object {
+                  "abv": 5,
+                  "brewers_tips": "Drink carefully",
+                  "description": "Just a mock beer for testing",
+                  "first_brewed": "Just a mock beer for testing",
+                  "food_pairing": Array [
+                    "Every snack you can imagine",
+                  ],
+                  "ibu": 40,
+                  "id": 1,
+                  "image_url": "https://testurl.com/beer/image.png",
+                  "name": "Test Beer",
+                  "tagline": "A beer for testing",
+                },
+                "onOpenBeerDetail": [Function],
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <Image
-                      alt="Test Beer"
-                      as="img"
-                      centered={true}
-                      src="https://testurl.com/beer/image.png"
-                      style={
-                        Object {
-                          "maxHeight": 200,
-                        }
-                      }
-                      ui={true}
-                    />,
-                    "className": "card-image-wrapper",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "function",
-                    "props": Object {
-                      "alt": "Test Beer",
-                      "as": "img",
-                      "centered": true,
-                      "src": "https://testurl.com/beer/image.png",
-                      "style": Object {
-                        "maxHeight": 200,
-                      },
-                      "ui": true,
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
-                  },
-                  "type": "div",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "children": Array [
-                      <CardHeader>
-                        Test Beer
-                      </CardHeader>,
-                      <CardMeta>
-                        <span
-                          className="date"
-                        >
-                          Since Just a mock beer for testing
-                        </span>
-                      </CardMeta>,
-                      <CardDescription>
-                        A beer for testing
-                      </CardDescription>,
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "children": "Test Beer",
-                      },
-                      "ref": null,
-                      "rendered": "Test Beer",
-                      "type": [Function],
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "children": <span
-                          className="date"
-                        >
-                          Since Just a mock beer for testing
-                        </span>,
-                      },
-                      "ref": null,
-                      "rendered": Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "Since Just a mock beer for testing",
-                          "className": "date",
-                        },
-                        "ref": null,
-                        "rendered": "Since Just a mock beer for testing",
-                        "type": "span",
-                      },
-                      "type": [Function],
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "children": "A beer for testing",
-                      },
-                      "ref": null,
-                      "rendered": "A beer for testing",
-                      "type": [Function],
-                    },
-                  ],
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "children": "5 % - 40 IBU",
-                    "extra": true,
-                  },
-                  "ref": null,
-                  "rendered": "5 % - 40 IBU",
-                  "type": [Function],
-                },
-              ],
+              "rendered": null,
               "type": [Function],
             },
             "type": [Function],
@@ -410,50 +180,25 @@ ShallowWrapper {
             <GridColumn
               stretched={true}
             >
-              <Card
-                centered={true}
-                link={true}
-                onClick={[Function]}
-                onKeyPress={[Function]}
-                tabIndex="0"
-              >
-                <div
-                  className="card-image-wrapper"
-                >
-                  <Image
-                    alt="Test Beer"
-                    as="img"
-                    centered={true}
-                    src="https://testurl.com/beer/image.png"
-                    style={
-                      Object {
-                        "maxHeight": 200,
-                      }
-                    }
-                    ui={true}
-                  />
-                </div>
-                <CardContent>
-                  <CardHeader>
-                    Test Beer
-                  </CardHeader>
-                  <CardMeta>
-                    <span
-                      className="date"
-                    >
-                      Since Just a mock beer for testing
-                    </span>
-                  </CardMeta>
-                  <CardDescription>
-                    A beer for testing
-                  </CardDescription>
-                </CardContent>
-                <CardContent
-                  extra={true}
-                >
-                  5 % - 40 IBU
-                </CardContent>
-              </Card>
+              <BeerCard
+                beer={
+                  Object {
+                    "abv": 5,
+                    "brewers_tips": "Drink carefully",
+                    "description": "Just a mock beer for testing",
+                    "first_brewed": "Just a mock beer for testing",
+                    "food_pairing": Array [
+                      "Every snack you can imagine",
+                    ],
+                    "ibu": 40,
+                    "id": 1,
+                    "image_url": "https://testurl.com/beer/image.png",
+                    "name": "Test Beer",
+                    "tagline": "A beer for testing",
+                  }
+                }
+                onOpenBeerDetail={[Function]}
+              />
             </GridColumn>
           </Grid>,
           false,
@@ -470,50 +215,25 @@ ShallowWrapper {
               <GridColumn
                 stretched={true}
               >
-                <Card
-                  centered={true}
-                  link={true}
-                  onClick={[Function]}
-                  onKeyPress={[Function]}
-                  tabIndex="0"
-                >
-                  <div
-                    className="card-image-wrapper"
-                  >
-                    <Image
-                      alt="Test Beer"
-                      as="img"
-                      centered={true}
-                      src="https://testurl.com/beer/image.png"
-                      style={
-                        Object {
-                          "maxHeight": 200,
-                        }
-                      }
-                      ui={true}
-                    />
-                  </div>
-                  <CardContent>
-                    <CardHeader>
-                      Test Beer
-                    </CardHeader>
-                    <CardMeta>
-                      <span
-                        className="date"
-                      >
-                        Since Just a mock beer for testing
-                      </span>
-                    </CardMeta>
-                    <CardDescription>
-                      A beer for testing
-                    </CardDescription>
-                  </CardContent>
-                  <CardContent
-                    extra={true}
-                  >
-                    5 % - 40 IBU
-                  </CardContent>
-                </Card>
+                <BeerCard
+                  beer={
+                    Object {
+                      "abv": 5,
+                      "brewers_tips": "Drink carefully",
+                      "description": "Just a mock beer for testing",
+                      "first_brewed": "Just a mock beer for testing",
+                      "food_pairing": Array [
+                        "Every snack you can imagine",
+                      ],
+                      "ibu": 40,
+                      "id": 1,
+                      "image_url": "https://testurl.com/beer/image.png",
+                      "name": "Test Beer",
+                      "tagline": "A beer for testing",
+                    }
+                  }
+                  onOpenBeerDetail={[Function]}
+                />
               </GridColumn>,
             ],
             "columns": 4,
@@ -526,231 +246,51 @@ ShallowWrapper {
               "key": "1",
               "nodeType": "function",
               "props": Object {
-                "children": <Card
-                  centered={true}
-                  link={true}
-                  onClick={[Function]}
-                  onKeyPress={[Function]}
-                  tabIndex="0"
-                >
-                  <div
-                    className="card-image-wrapper"
-                  >
-                    <Image
-                      alt="Test Beer"
-                      as="img"
-                      centered={true}
-                      src="https://testurl.com/beer/image.png"
-                      style={
-                        Object {
-                          "maxHeight": 200,
-                        }
-                      }
-                      ui={true}
-                    />
-                  </div>
-                  <CardContent>
-                    <CardHeader>
-                      Test Beer
-                    </CardHeader>
-                    <CardMeta>
-                      <span
-                        className="date"
-                      >
-                        Since Just a mock beer for testing
-                      </span>
-                    </CardMeta>
-                    <CardDescription>
-                      A beer for testing
-                    </CardDescription>
-                  </CardContent>
-                  <CardContent
-                    extra={true}
-                  >
-                    5 % - 40 IBU
-                  </CardContent>
-                </Card>,
+                "children": <BeerCard
+                  beer={
+                    Object {
+                      "abv": 5,
+                      "brewers_tips": "Drink carefully",
+                      "description": "Just a mock beer for testing",
+                      "first_brewed": "Just a mock beer for testing",
+                      "food_pairing": Array [
+                        "Every snack you can imagine",
+                      ],
+                      "ibu": 40,
+                      "id": 1,
+                      "image_url": "https://testurl.com/beer/image.png",
+                      "name": "Test Beer",
+                      "tagline": "A beer for testing",
+                    }
+                  }
+                  onOpenBeerDetail={[Function]}
+                />,
                 "stretched": true,
               },
               "ref": null,
               "rendered": Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
-                  "centered": true,
-                  "children": Array [
-                    <div
-                      className="card-image-wrapper"
-                    >
-                      <Image
-                        alt="Test Beer"
-                        as="img"
-                        centered={true}
-                        src="https://testurl.com/beer/image.png"
-                        style={
-                          Object {
-                            "maxHeight": 200,
-                          }
-                        }
-                        ui={true}
-                      />
-                    </div>,
-                    <CardContent>
-                      <CardHeader>
-                        Test Beer
-                      </CardHeader>
-                      <CardMeta>
-                        <span
-                          className="date"
-                        >
-                          Since Just a mock beer for testing
-                        </span>
-                      </CardMeta>
-                      <CardDescription>
-                        A beer for testing
-                      </CardDescription>
-                    </CardContent>,
-                    <CardContent
-                      extra={true}
-                    >
-                      5 % - 40 IBU
-                    </CardContent>,
-                  ],
-                  "link": true,
-                  "onClick": [Function],
-                  "onKeyPress": [Function],
-                  "tabIndex": "0",
+                  "beer": Object {
+                    "abv": 5,
+                    "brewers_tips": "Drink carefully",
+                    "description": "Just a mock beer for testing",
+                    "first_brewed": "Just a mock beer for testing",
+                    "food_pairing": Array [
+                      "Every snack you can imagine",
+                    ],
+                    "ibu": 40,
+                    "id": 1,
+                    "image_url": "https://testurl.com/beer/image.png",
+                    "name": "Test Beer",
+                    "tagline": "A beer for testing",
+                  },
+                  "onOpenBeerDetail": [Function],
                 },
                 "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": <Image
-                        alt="Test Beer"
-                        as="img"
-                        centered={true}
-                        src="https://testurl.com/beer/image.png"
-                        style={
-                          Object {
-                            "maxHeight": 200,
-                          }
-                        }
-                        ui={true}
-                      />,
-                      "className": "card-image-wrapper",
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "alt": "Test Beer",
-                        "as": "img",
-                        "centered": true,
-                        "src": "https://testurl.com/beer/image.png",
-                        "style": Object {
-                          "maxHeight": 200,
-                        },
-                        "ui": true,
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": [Function],
-                    },
-                    "type": "div",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "function",
-                    "props": Object {
-                      "children": Array [
-                        <CardHeader>
-                          Test Beer
-                        </CardHeader>,
-                        <CardMeta>
-                          <span
-                            className="date"
-                          >
-                            Since Just a mock beer for testing
-                          </span>
-                        </CardMeta>,
-                        <CardDescription>
-                          A beer for testing
-                        </CardDescription>,
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "function",
-                        "props": Object {
-                          "children": "Test Beer",
-                        },
-                        "ref": null,
-                        "rendered": "Test Beer",
-                        "type": [Function],
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "function",
-                        "props": Object {
-                          "children": <span
-                            className="date"
-                          >
-                            Since Just a mock beer for testing
-                          </span>,
-                        },
-                        "ref": null,
-                        "rendered": Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "children": "Since Just a mock beer for testing",
-                            "className": "date",
-                          },
-                          "ref": null,
-                          "rendered": "Since Just a mock beer for testing",
-                          "type": "span",
-                        },
-                        "type": [Function],
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "function",
-                        "props": Object {
-                          "children": "A beer for testing",
-                        },
-                        "ref": null,
-                        "rendered": "A beer for testing",
-                        "type": [Function],
-                      },
-                    ],
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "function",
-                    "props": Object {
-                      "children": "5 % - 40 IBU",
-                      "extra": true,
-                    },
-                    "ref": null,
-                    "rendered": "5 % - 40 IBU",
-                    "type": [Function],
-                  },
-                ],
+                "rendered": null,
                 "type": [Function],
               },
               "type": [Function],
