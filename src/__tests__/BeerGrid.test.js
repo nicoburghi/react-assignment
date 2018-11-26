@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import BeerGrid from '../components/BeerGrid';
 
 describe('BeerGrid Unit Test', () => {
@@ -49,49 +49,20 @@ describe('BeerGrid Unit Test', () => {
 
     test('Component should render beers cards', () => {
         const wrapper = getBeerGrid();
-        expect(wrapper.find('Card')).toHaveLength(props.beers.length);
+        expect(wrapper.find('BeerCard')).toHaveLength(props.beers.length);
     });
 
-    test('Component should render beer card IBU data when ibu property is defined', () => {
-        const wrapper = mount(<BeerGrid {...props} />);
-        const firstCard = wrapper.find('Card').at(0);
-        const expected = expect.stringMatching(/^.*IBU/);
-        expect(firstCard.find('CardContent[extra=true]').text()).toEqual(expected);
-    });
-
-    test('Component should not render beer card IBU data when ibu property is null', () => {
-        props.beers[0].ibu = null;
-        const wrapper = mount(<BeerGrid {...props} />);
-        const firstCard = wrapper.find('Card').at(0);
-        const expected = expect.stringMatching(/^.*IBU/);
-        expect(firstCard.find('CardContent[extra=true]').text()).not.toEqual(expected);
-    });
-
-    test('Component should render beer details on click in a beer card', () => {
+    test('Component should render beer details when onOpenBeerDetail function is called', () => {
         const wrapper = getBeerGrid();
-        const firstCard = wrapper.find('Card').at(0);
-        firstCard.simulate('click', { preventDefault: jest.fn() });
+        wrapper.instance().onOpenBeerDetail(props.beers[0]);
+        expect(wrapper.find('BeerDetails')).toBeDefined();
+    });
+
+    test('Component should close beer details when onCloseDetail function is called', () => {
+        const wrapper = getBeerGrid();
+        wrapper.instance().onOpenBeerDetail(props.beers[0]);
         expect(wrapper.find('BeerDetails')).toBeDefined();
         wrapper.instance().onCloseDetail();
         expect(wrapper.find('BeerDetails')).toHaveLength(0);
-    });
-
-    test('Component should render beer details on keypress Enter in a beer card', () => {
-        const wrapper = getBeerGrid();
-        const firstCard = wrapper.find('Card').at(0);
-        firstCard.simulate('focus');
-        firstCard.simulate('keypress', { preventDefault: jest.fn(), key: 'Enter' });
-        expect(wrapper.find('BeerDetails')).toBeDefined();
-        wrapper.instance().onCloseDetail();
-        expect(wrapper.find('BeerDetails')).toHaveLength(0);
-    });
-
-    test('Component should not call openBeerDetail function on keypress different from Enter', () => {
-        const wrapper = getBeerGrid();
-        wrapper.instance().openBeerDetail = jest.fn();
-        const firstCard = wrapper.find('Card').at(0);
-        firstCard.simulate('focus');
-        firstCard.simulate('keypress', { preventDefault: jest.fn(), key: 'a' });
-        expect(wrapper.instance().openBeerDetail).not.toHaveBeenCalled();
     });
 });

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Card, Image, Message } from 'semantic-ui-react';
+import { Grid, Message } from 'semantic-ui-react';
+import BeerCard from './BeerCard';
 import BeerDetails from './BeerDetails';
 import '../styles/BeerGrid.css';
 
@@ -20,6 +21,7 @@ class BeerGrid extends React.Component {
 
         this.beerDetailData = null;
         this.onCloseDetail = this.onCloseDetail.bind(this);
+        this.onOpenBeerDetail = this.onOpenBeerDetail.bind(this);
     }
 
     onCloseDetail() {
@@ -29,21 +31,7 @@ class BeerGrid extends React.Component {
         });
     }
 
-    handleClick(event, beer) {
-        event.preventDefault();
-
-        this.openBeerDetail(beer);
-    }
-
-    handleKeyPress(event, beer) {
-        event.preventDefault();
-
-        if (event.key === 'Enter') {
-            this.openBeerDetail(beer);
-        }
-    }
-
-    openBeerDetail(beer) {
+    onOpenBeerDetail(beer) {
         this.beerDetailData = beer;
         this.setState({
             isModalOpened: true,
@@ -63,26 +51,7 @@ class BeerGrid extends React.Component {
                                 {
                                     beers.map(beer => (
                                         <Grid.Column key={beer.id} stretched>
-                                            <Card centered link onClick={e => this.handleClick(e, beer)} onKeyPress={e => this.handleKeyPress(e, beer)} tabIndex='0'>
-                                                <div className="card-image-wrapper">
-                                                    <Image
-                                                        centered
-                                                        style={{ maxHeight: 200 }}
-                                                        src={beer.image_url}
-                                                        alt={beer.name}
-                                                    />
-                                                </div>
-                                                <Card.Content>
-                                                    <Card.Header>{beer.name}</Card.Header>
-                                                    <Card.Meta>
-                                                        <span className='date'>{`Since ${beer.first_brewed}`}</span>
-                                                    </Card.Meta>
-                                                    <Card.Description>{beer.tagline}</Card.Description>
-                                                </Card.Content>
-                                                <Card.Content extra>
-                                                    { `${beer.abv} %${beer.ibu ? ` - ${beer.ibu} IBU` : ''}` }
-                                                </Card.Content>
-                                            </Card>
+                                            <BeerCard beer={beer} onOpenBeerDetail={this.onOpenBeerDetail} />
                                         </Grid.Column>
                                     ))
                                 }
