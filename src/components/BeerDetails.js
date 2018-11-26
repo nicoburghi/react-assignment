@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Header, Image, Modal } from 'semantic-ui-react';
+import '../styles/BeerDetails.css';
 
 function BeerDetails(props) {
     const { beer, onCloseDetail } = props;

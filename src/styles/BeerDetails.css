@@ -1,0 +1,30 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .ui .modal{
+        top: 10%;
+        left: 2%;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) { 
+    .ui .modal{
+        top: 10%;
+        left: 5%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .ui .modal{
+        top:10%;
+        left:10%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .ui .modal{
+        top:10%;
+        left:25%;
+    }
+}
