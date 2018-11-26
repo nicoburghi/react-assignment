@@ -8,7 +8,7 @@ import '../styles/BeerGrid.css';
 /**
  * Beer Grid Component
  *
- * Render a grid of beers and shows some summary information.
+ * Render a grid of beers cards.
  * It manage the action of opening a beer detail
  */
 class BeerGrid extends React.Component {
