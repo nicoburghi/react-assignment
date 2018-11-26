@@ -3,6 +3,11 @@ import PropTypes from 'prop-types';
 import { Header, Image, Modal } from 'semantic-ui-react';
 import '../styles/BeerDetails.css';
 
+/**
+ * Beer Detail Component
+ *
+ * Shows more information about a particular beer
+ */
 function BeerDetails(props) {
     const { beer, onCloseDetail } = props;
 

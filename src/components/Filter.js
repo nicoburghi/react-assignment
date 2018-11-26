@@ -3,6 +3,12 @@ import PropTypes from 'prop-types';
 import { Form, Input, Button, Segment, Header } from 'semantic-ui-react';
 import '../styles/Filter.css';
 
+/**
+ * Key Press handler
+ *
+ * Prevents the user to insert not Digit characters in number inputs
+ * This is because the API only accepts Integer numbers
+ */
 const handleKeyPress = (event) => {
     const re = /[0-9]/g;
     if (!re.test(event.key) && event.key !== 'Enter') {
@@ -10,6 +16,12 @@ const handleKeyPress = (event) => {
     }
 };
 
+/**
+ * Filter Component
+ *
+ * Render a form that executes the onFilter action (received by props) in the onSubmit event
+ * This action may cause the App Component to retrieve filtered data from the API
+ */
 class Filter extends React.Component {
     constructor(props) {
         super(props);

@@ -4,6 +4,12 @@ import { Grid, Card, Image, Message } from 'semantic-ui-react';
 import BeerDetails from './BeerDetails';
 import '../styles/BeerGrid.css';
 
+/**
+ * Beer Grid Component
+ *
+ * Render a grid of beers and shows some summary information.
+ * It manage the action of opening a beer detail
+ */
 class BeerGrid extends React.Component {
     constructor(props) {
         super(props);

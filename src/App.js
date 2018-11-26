@@ -6,6 +6,13 @@ import './App.css';
 
 const API_URL = 'https://api.punkapi.com/v2/beers';
 
+/**
+ * App Component
+ *
+ * Main component of the page.
+ * It render the header and the main content.
+ * It also get beer data from the API when component is mounted and when Filter executes onFilter action
+ */
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -28,6 +35,11 @@ class App extends React.Component {
         this.getBeers(filters);
     }
 
+    /**
+     * Get a list of beers from the API
+     *
+     * @param {Object} filters key value pairs that are send as query params in the API call
+     */
     getBeers(filters = {}) {
         const getQueryParams = () => {
             const queryParams = Object.keys(filters)
