@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import BeerGrid from '../components/BeerGrid';
 
 describe('BeerGrid Unit Test', () => {
@@ -65,5 +65,4 @@ describe('BeerGrid Unit Test', () => {
         wrapper.instance().onCloseDetail();
         expect(wrapper.find('BeerDetails')).toHaveLength(0);
     });
-
 });
