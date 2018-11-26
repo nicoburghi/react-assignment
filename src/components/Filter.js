@@ -22,52 +22,47 @@ const handleKeyPress = (event) => {
  * Render a form that executes the onFilter action (received by props) in the onSubmit event
  * This action may cause the App Component to retrieve filtered data from the API
  */
-class Filter extends React.Component {
-    constructor(props) {
-        super(props);
-        this.handleSubmit = this.handleSubmit.bind(this);
-        this.beerNameField = React.createRef();
-        this.ibuGtField = React.createRef();
-        this.abvGtField = React.createRef();
-    }
+function Filter(props) {
+    const { onFilter } = props;
 
-    handleSubmit(event) {
+    const beerNameField = React.createRef();
+    const ibuGtField = React.createRef();
+    const abvGtField = React.createRef();
+
+    const handleSubmit = (event) => {
         event.preventDefault();
-        const { onFilter } = this.props;
         const filters = {
-            beer_name: this.beerNameField.current.inputRef.value,
-            ibu_gt: this.ibuGtField.current.inputRef.value,
-            abv_gt: this.abvGtField.current.inputRef.value,
+            beer_name: beerNameField.current.inputRef.value,
+            ibu_gt: ibuGtField.current.inputRef.value,
+            abv_gt: abvGtField.current.inputRef.value,
         };
         onFilter(filters);
-    }
+    };
 
-    render() {
-        return (
-            <Segment className="filters-wrapper">
-                <Header as='h3'>Filters</Header>
-                <Form onSubmit={this.handleSubmit} role="search">
-                    <Form.Group widths='equal'>
-                        <Form.Field>
-                            <label htmlFor='beerName'>Name</label>
-                            <Input placeholder='Name' id='beerName' ref={this.beerNameField} />
-                        </Form.Field>
-                        <Form.Field>
-                            <label htmlFor='beerIbuGt'>IBU Greater Than</label>
-                            <Input type='number' placeholder='IBU Greater Than' id='beerIbuGt' ref={this.ibuGtField} onKeyPress={handleKeyPress} />
-                        </Form.Field>
-                        <Form.Field>
-                            <label htmlFor='beerAbvGt'>ABV Greater Than</label>
-                            <Input type='number' placeholder='ABV Greater Than' id='beerAbvGt' ref={this.abvGtField} onKeyPress={handleKeyPress} />
-                        </Form.Field>
-                        <Form.Field className='form-action-container'>
-                            <Button primary>Filter</Button>
-                        </Form.Field>
-                    </Form.Group>
-                </Form>
-            </Segment>
-        );
-    }
+    return (
+        <Segment className="filters-wrapper">
+            <Header as='h3'>Filters</Header>
+            <Form onSubmit={handleSubmit} role="search">
+                <Form.Group widths='equal'>
+                    <Form.Field>
+                        <label htmlFor='beerName'>Name</label>
+                        <Input placeholder='Name' id='beerName' ref={beerNameField} />
+                    </Form.Field>
+                    <Form.Field>
+                        <label htmlFor='beerIbuGt'>IBU Greater Than</label>
+                        <Input type='number' placeholder='IBU Greater Than' id='beerIbuGt' ref={ibuGtField} onKeyPress={handleKeyPress} />
+                    </Form.Field>
+                    <Form.Field>
+                        <label htmlFor='beerAbvGt'>ABV Greater Than</label>
+                        <Input type='number' placeholder='ABV Greater Than' id='beerAbvGt' ref={abvGtField} onKeyPress={handleKeyPress} />
+                    </Form.Field>
+                    <Form.Field className='form-action-container'>
+                        <Button primary>Filter</Button>
+                    </Form.Field>
+                </Form.Group>
+            </Form>
+        </Segment>
+    );
 }
 
 Filter.propTypes = {

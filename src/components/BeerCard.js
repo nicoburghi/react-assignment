@@ -2,6 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, Image } from 'semantic-ui-react';
 
+/**
+ * Beer Card Component
+ *
+ * Render a beer card which shows some summary information
+ */
 function BeerCard(props) {
     const { beer, onOpenBeerDetail } = props;
 
