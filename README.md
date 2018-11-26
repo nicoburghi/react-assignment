@@ -1,6 +1,6 @@
 ## Punk Beers 
 
-This web app allow you to explore the Brewdog's beer catalogue using the [Punk API](https://punkapi.com/).
+This web application allows you to explore the Brewdog's beer catalogue using the [Punk API](https://punkapi.com/).
 
 You can search beers by name, alcohol average, or IBU value. You can also go through the results and open detail information of each beer.
 
