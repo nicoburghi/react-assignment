@@ -6,7 +6,7 @@ You can search beers by name, alcohol average, or IBU value. You can also go thr
 
 This Project uses [Semantic UI React](https://react.semantic-ui.com/) library to render UI components and the [Semantic UI Css](https://semantic-ui.com) to give the page a general style.
 
-Tu can see a demo in the following GitHub page: [PunkBeers](https://nicoburghi.github.io/react-assignment/)
+You can see a demo in the following GitHub page: [PunkBeers](https://nicoburghi.github.io/react-assignment/)
 
 * * * * *  
 
