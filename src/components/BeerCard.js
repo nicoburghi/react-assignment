@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Card, Image } from 'semantic-ui-react';
+import '../styles/BeerCard.css';
 
 /**
  * Beer Card Component
@@ -25,7 +26,7 @@ function BeerCard(props) {
     };
 
     return (
-        <Card centered link onClick={e => handleClick(e)} onKeyPress={e => handleKeyPress(e)} tabIndex='0'>
+        <Card className='beer-card' centered link onClick={e => handleClick(e)} onKeyPress={e => handleKeyPress(e)} tabIndex='0'>
             <div className="card-image-wrapper">
                 <Image
                     centered

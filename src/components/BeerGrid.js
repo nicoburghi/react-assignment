@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Grid, Message } from 'semantic-ui-react';
 import BeerCard from './BeerCard';
 import BeerDetails from './BeerDetails';
-import '../styles/BeerGrid.css';
 
 /**
  * Beer Grid Component

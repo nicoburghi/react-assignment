@@ -74,6 +74,7 @@ ShallowWrapper {
           5 % - 40 IBU
         </CardContent>,
       ],
+      "className": "beer-card",
       "link": true,
       "onClick": [Function],
       "onKeyPress": [Function],
@@ -255,6 +256,7 @@ ShallowWrapper {
             5 % - 40 IBU
           </CardContent>,
         ],
+        "className": "beer-card",
         "link": true,
         "onClick": [Function],
         "onKeyPress": [Function],

@@ -12,7 +12,7 @@ function BeerDetails(props) {
     const { beer, onCloseDetail } = props;
 
     return (
-        <Modal open closeIcon onClose={onCloseDetail}>
+        <Modal className='beer-details' open closeIcon onClose={onCloseDetail}>
             <Modal.Header>{beer.name}</Modal.Header>
             <Modal.Content image scrolling>
                 <Image wrapped size='medium' src={beer.image_url} alt={beer.name} />

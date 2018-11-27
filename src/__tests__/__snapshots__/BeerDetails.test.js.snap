@@ -81,6 +81,7 @@ ShallowWrapper {
           </ModalDescription>
         </ModalContent>,
       ],
+      "className": "beer-details",
       "closeIcon": true,
       "closeOnDimmerClick": true,
       "closeOnDocumentClick": false,
@@ -369,6 +370,7 @@ ShallowWrapper {
             </ModalDescription>
           </ModalContent>,
         ],
+        "className": "beer-details",
         "closeIcon": true,
         "closeOnDimmerClick": true,
         "closeOnDocumentClick": false,
